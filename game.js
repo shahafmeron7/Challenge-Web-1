@@ -1,3 +1,4 @@
+
 var buttonColours = ["red", "blue", "green", "yellow"];
 var gamePattern = [];
 var userClickedPattern = [];
@@ -59,11 +60,8 @@ function nextSequence() {
 
 function checkAnswer(currentLevel) {
   if (gamePattern[currentLevel] === userClickedPattern[currentLevel]) {
-    console.log("success");
     if (level == 3) {
-      console.log(
-        "Congratulations! You worked hard enough to get the first piece of the flag: Afikoman{r3v3ng3_"
-      );
+      $("#level-title-2").text("Congratulations! You worked hard enough to get the first piece of the flag:"+str);
     }
     if (gamePattern.length === userClickedPattern.length) {
       setTimeout(function () {
@@ -78,3 +76,53 @@ function checkAnswer(currentLevel) {
     gamePattern = [];
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+const str="Afikoman{Tr4nsf"
